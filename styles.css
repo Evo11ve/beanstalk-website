@@ -71,9 +71,9 @@ body{
     /* justify-content: space-around; */
     gap : 6%;
     width : 50%;
-    justify-content: space-between;
+    /* justify-content: space-around; */
     /* gap : 2rem; */
-    /* padding-bottom : 10%; */
+    padding-bottom : 10%;
 }
 .right-content {
     text-align: center;
