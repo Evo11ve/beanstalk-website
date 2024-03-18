@@ -165,6 +165,7 @@ a{
         /* height: 98vh; */
         margin-top: 0;
         padding-top: 0;
+        gap : 1.5rem;
     }
     .left-content{
         padding-left: 0;
@@ -172,7 +173,7 @@ a{
         text-align: center;
         gap : 2rem;
         line-height: 1.5;
-        height : 70%;
+        height : 65%;
     }
     .contact{
         width : 100%;
@@ -226,7 +227,7 @@ a{
     }
 
     .swiggy-mini{
-        top : 0;
+        /* top : 35%; */
     }
 
 
