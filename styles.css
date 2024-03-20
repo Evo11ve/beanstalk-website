@@ -15,6 +15,11 @@ body{
     height: 100vh;
 }
 
+.container-block {
+    display: flex;
+    flex-direction: column;
+}
+
 .content{
     padding-left : 3.5%;
     padding-right : 3.5%;
@@ -23,7 +28,7 @@ body{
     justify-content: space-around;
     position : relative;
     z-index: 1;
-    height : 80%;
+    height : 100vh;
 }
 
 .wood-image{
@@ -31,6 +36,7 @@ body{
     position : absolute;
     bottom : 0;
     z-index: 0;
+    height: 3vh;
 }
 
 .bean-logo{
@@ -69,15 +75,18 @@ body{
     display: flex;
     flex-direction: column;
     /* justify-content: space-around; */
-    gap : 6%;
+    /* gap : 6%; */
     width : 50%;
     /* justify-content: space-around; */
     /* gap : 2rem; */
-    padding-bottom : 10%;
 }
 .right-content {
     text-align: center;
     max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
 }
 h1{
     color : #85AD2C;
@@ -137,25 +146,23 @@ a{
 }
 
 .basket-image {
-    width: 45%;
+    width: 100%;
+    z-index: 1;
+    padding-bottom: 5vh;
     /* position : relative; */
     /* bottom : -15%; */
     /* top : 20%; */
-    position: absolute;
+    /* position: absolute;
     bottom : -2%;
     right : 2%;
-    z-index: 1;
+    z-index: 1; */
 }
 
 @media (max-width : 1024px){
     body{
         background-image: url("images/beanstalk-background.jpg");
         background-size: cover;
-        /* height : 100vh; */
-        /* background-repeat: repeat; */
-        /* height : 100vh; */
-        /* height : auto; */
-        /* overflow :hidden; */
+        /* overflow-x: hidden; */
     }
     .content{
         flex-direction: column;
@@ -171,9 +178,10 @@ a{
         padding-left: 0;
         width : 100%;
         text-align: center;
-        gap : 2rem;
+        /* gap : 2rem; */
         line-height: 1.5;
-        height : 65%;
+        height : 100%;
+        justify-content: space-around;
     }
     .contact{
         width : 100%;
@@ -181,6 +189,9 @@ a{
     }
     .right-content{
         max-width: 100%;
+        height: 100%;
+        justify-content: end;
+        gap: 1vh;
     }
 
     .bean-logo{
@@ -211,6 +222,7 @@ a{
     }
 
     .wood-image{
+        height: 3vh;
         /* position : relative; */
         /* bottom : 3.5rem; */
     }
@@ -218,16 +230,17 @@ a{
     .basket-image{
         /* position : relative;
         top : 1.6rem; */
-        position: absolute;
+        /* position: absolute;
         bottom: -1%;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translateX(-50%); */
         width: 20rem; /* Adjust width as needed */
         z-index: 1;
+        padding-bottom: 1vh;
     }
 
     .swiggy-mini{
-        /* top : 35%; */
+        top: 0;
     }
 
 
