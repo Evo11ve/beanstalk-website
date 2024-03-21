@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'chalkduster';
+    src: url('Chalkduster.ttf') format('truetype');
+}
+
+body{
+    background-color: #363939;
+    background-image: url("images/beanstalk-background.jpg");
+    background-repeat: no-repeat;
+    font-family: 'chalkduster';   
+    margin: 0;
+    overflow: hidden;
+}
+
+.container-block{
+    overflow: hidden;
+    /* background-image: ; */
+    background-image: url("images/beanstalk-background.jpg");;
+    height : 100vh;
+    margin: 0;
+    padding : 0;
+    padding-top: 3%;
+}
+.left-content{
+    position: relative;
+    bottom : 0;
+}
+.content{
+    text-align: center;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* flex-direction: column; */
+    /* height: 100vh; */
+}
+
+.bean-logo{
+    width : 45%;
+}
+
+h1{
+    color : #85AD2C;
+}
+
+.message-content{
+    color : #fff;
+}
+
+.soon{
+    color : #85AD2C;
+}
+
+.contact-us{
+    color : #fff;
+}
+
+a{
+    text-decoration: none;
+    color : #85AD2C;
+}
+
+.phone-icon{
+    margin-right: 0.5rem;
+}
+
+.swiggy-mini{
+    color : #fff;
+}
+
+.swiggy-logo{
+    width : 45%;
+    animation: scaleAnimation 0.5s infinite alternate;
+}
+.basket-image{
+    width : 81%;
+}
+
+.wood-image{
+    width : 100%;
+    height : 3vh;
+    position : fixed;
+    bottom : 0;
+}
+
+.contact-us{
+    margin-bottom: 0;
+}
+
+.number{
+    margin-top: 1.5%;
+    font-size: 1.3rem;
+}
+
+
+.basket-content{
+    position: relative;
+    z-index: 1;
+    bottom: -4%;
+}
+
+.right-content{
+    position : absolute;
+    bottom: 0;
+    z-index : 1;
+}
+
+.message-content{
+    padding : 0 5%;
+    line-height: 1.8;
+}
+
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(1); /* Initial scale */
+    }
+    100% {
+        transform: scale(1.1); /* Scale by 10% */
+    }
+}
